@@ -3,119 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RKMC - Social Media</title>
+    <title>RKMC | Social Media</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- Font Awesome dla ikon -->
     <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Animate.css dla efektów wejścia -->
+    <link rel="stylesheet" href="https://cloudflare.com"/>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            width: 100%;
-            max-width: 350px;
-            padding: 20px;
-        }
-
-        /* STYLIZACJA LOGO RKMC */
-        .logo-box {
-            font-size: 3.5rem;
-            font-weight: 900;
-            letter-spacing: -2px;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, #5865F2, #ff0050, #ff0000);
+        @import url('https://googleapis.com');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .gradient-text {
+            background: linear-gradient(to right, #5865F2, #ff0050, #FF0000);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-        }
-
-        .subtitle {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 30px;
-            letter-spacing: 1px;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .link-card {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16px;
-            text-decoration: none;
-            border-radius: 12px;
-            color: white;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .link-card i {
-            position: absolute;
-            left: 20px;
-            font-size: 1.4rem;
-        }
-
-        /* KOLORY PLATFORM */
-        .discord { background: #5865F2; box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4); }
-        .tiktok { background: #010101; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
-        .youtube { background: #FF0000; box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4); }
-
-        .link-card:hover {
-            transform: scale(1.03);
-            filter: brightness(1.1);
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 0.75rem;
-            color: #ccc;
-            text-transform: uppercase;
-            letter-spacing: 2px;
         }
     </style>
 </head>
-<body>
+<body class="bg-white min-h-screen flex items-center justify-center p-6">
 
-    <div class="container">
-        <!-- TWOJE LOGO -->
-        <div class="logo-box">rkmc</div>
-        <p class="subtitle">Moje oficjalne kanały</p>
-
-        <div class="links">
-            <a href="LINK_DO_DISCORDA" class="link-card discord" target="_blank">
-                <i class="fab fa-discord"></i> Discord
-            </a>
-
-            <a href="LINK_DO_TIKTOKA" class="link-card tiktok" target="_blank">
-                <i class="fab fa-tiktok"></i> TikTok
-            </a>
-
-            <a href="LINK_DO_YOUTUBE" class="link-card youtube" target="_blank">
-                <i class="fab fa-youtube"></i> YouTube
-            </a>
+    <div class="max-w-sm w-full text-center">
+        
+        <!-- LOGO RKMC -->
+        <div class="animate__animated animate__bounceInDown">
+            <h1 class="text-7xl font-black tracking-tighter uppercase gradient-text mb-2">
+                rkmc
+            </h1>
+            <p class="text-gray-400 font-medium tracking-widest text-xs uppercase mb-10">
+                Oficjalne Linki
+            </p>
         </div>
 
-        <div class="footer">
-            &copy; 2024 RKMC Content
+        <!-- PRZYCISKI -->
+        <div class="space-y-4 animate__animated animate__fadeInUp animate__delay-1s">
+            
+            <!-- DISCORD -->
+            <a href="TWÓJ_LINK" target="_blank" 
+               class="flex items-center justify-center w-full py-4 px-6 bg-[#5865F2] text-white rounded-2xl font-bold shadow-lg shadow-blue-500/30 hover:scale-105 transition-transform duration-300">
+                <i class="fab fa-discord text-2xl mr-3"></i>
+                Discord
+            </a>
+
+            <!-- TIKTOK -->
+            <a href="TWÓJ_LINK" target="_blank" 
+               class="flex items-center justify-center w-full py-4 px-6 bg-black text-white rounded-2xl font-bold shadow-lg shadow-gray-500/20 hover:scale-105 transition-transform duration-300 border-x-4 border-cyan-400 border-r-pink-500">
+                <i class="fab fa-tiktok text-2xl mr-3"></i>
+                TikTok
+            </a>
+
+            <!-- YOUTUBE -->
+            <a href="TWÓJ_LINK" target="_blank" 
+               class="flex items-center justify-center w-full py-4 px-6 bg-[#FF0000] text-white rounded-2xl font-bold shadow-lg shadow-red-500/30 hover:scale-105 transition-transform duration-300">
+                <i class="fab fa-youtube text-2xl mr-3"></i>
+                YouTube
+            </a>
+
         </div>
+
+        <!-- STOPKA -->
+        <footer class="mt-12 text-gray-300 text-[10px] uppercase tracking-[0.3em] animate__animated animate__fadeIn animate__delay-2s">
+            &copy; 2024 RKMC Ecosystem
+        </footer>
+
     </div>
 
 </body>
