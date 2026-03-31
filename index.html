@@ -1,1 +1,131 @@
-stronka przez stronke 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Social Media</title>
+    <!-- Ikony Font Awesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            background: linear-gradient(45deg, #ff0050, #00f2ea, #5865F2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 15px;
+            color: white;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .link-card i {
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Kolory dla poszczególnych platform */
+        .discord {
+            background: #5865F2; /* Blurple */
+            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
+        }
+
+        .tiktok {
+            background: #000000; /* Czarny z akcentem */
+            border-left: 5px solid #ff0050;
+            border-right: 5px solid #00f2ea;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .youtube {
+            background: #FF0000; /* YouTube Red */
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hej, to ja!</h1>
+        <p>Znajdziesz mnie tutaj:</p>
+
+        <div class="links">
+            <!-- DISCORD -->
+            <a href="https://discord.gg" class="link-card discord" target="_blank">
+                <i class="fab fa-discord"></i>
+                Discord
+            </a>
+
+            <!-- TIKTOK -->
+            <a href="https://tiktok.com" class="link-card tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                TikTok
+            </a>
+
+            <!-- YOUTUBE -->
+            <a href="https://youtube.com" class="link-card youtube" target="_blank">
+                <i class="fab fa-youtube"></i>
+                YouTube
+            </a>
+        </div>
+
+        <div class="footer">
+            &copy; 2024 Twoja Nazwa
+        </div>
+    </div>
+
+</body>
+</html>
