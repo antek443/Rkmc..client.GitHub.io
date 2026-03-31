@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moje Social Media</title>
-    <!-- Ikony Font Awesome -->
+    <title>RKMC - Social Media</title>
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
@@ -20,27 +19,32 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            color: #333;
         }
 
         .container {
             text-align: center;
-            padding: 2rem;
-            max-width: 400px;
-            width: 90%;
+            width: 100%;
+            max-width: 350px;
+            padding: 20px;
         }
 
-        h1 {
-            margin-bottom: 1rem;
-            font-size: 2rem;
-            background: linear-gradient(45deg, #ff0050, #00f2ea, #5865F2);
+        /* STYLIZACJA LOGO RKMC */
+        .logo-box {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #5865F2, #ff0050, #ff0000);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
         }
 
-        p {
-            margin-bottom: 2rem;
-            color: #666;
+        .subtitle {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
         }
 
         .links {
@@ -52,78 +56,65 @@
         .link-card {
             display: flex;
             align-items: center;
-            padding: 15px 25px;
+            justify-content: center;
+            padding: 16px;
             text-decoration: none;
-            border-radius: 15px;
+            border-radius: 12px;
             color: white;
             font-weight: 600;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
         .link-card i {
-            margin-right: 15px;
-            font-size: 1.5rem;
+            position: absolute;
+            left: 20px;
+            font-size: 1.4rem;
         }
+
+        /* KOLORY PLATFORM */
+        .discord { background: #5865F2; box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4); }
+        .tiktok { background: #010101; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+        .youtube { background: #FF0000; box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4); }
 
         .link-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        /* Kolory dla poszczególnych platform */
-        .discord {
-            background: #5865F2; /* Blurple */
-            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
-        }
-
-        .tiktok {
-            background: #000000; /* Czarny z akcentem */
-            border-left: 5px solid #ff0050;
-            border-right: 5px solid #00f2ea;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .youtube {
-            background: #FF0000; /* YouTube Red */
-            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+            transform: scale(1.03);
+            filter: brightness(1.1);
         }
 
         .footer {
-            margin-top: 3rem;
-            font-size: 0.8rem;
-            color: #bbb;
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Hej, to ja!</h1>
-        <p>Znajdziesz mnie tutaj:</p>
+        <!-- TWOJE LOGO -->
+        <div class="logo-box">rkmc</div>
+        <p class="subtitle">Moje oficjalne kanały</p>
 
         <div class="links">
-            <!-- DISCORD -->
-            <a href="https://discord.gg" class="link-card discord" target="_blank">
-                <i class="fab fa-discord"></i>
-                Discord
+            <a href="LINK_DO_DISCORDA" class="link-card discord" target="_blank">
+                <i class="fab fa-discord"></i> Discord
             </a>
 
-            <!-- TIKTOK -->
-            <a href="https://tiktok.com" class="link-card tiktok" target="_blank">
-                <i class="fab fa-tiktok"></i>
-                TikTok
+            <a href="LINK_DO_TIKTOKA" class="link-card tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
             </a>
 
-            <!-- YOUTUBE -->
-            <a href="https://youtube.com" class="link-card youtube" target="_blank">
-                <i class="fab fa-youtube"></i>
-                YouTube
+            <a href="LINK_DO_YOUTUBE" class="link-card youtube" target="_blank">
+                <i class="fab fa-youtube"></i> YouTube
             </a>
         </div>
 
         <div class="footer">
-            &copy; 2024 Twoja Nazwa
+            &copy; 2024 RKMC Content
         </div>
     </div>
 
